@@ -7,10 +7,10 @@ VALUES
 
 INSERT INTO role (title, salary, department_id)
 VALUES
-    ("Director", 80000, 3),
-    ("Department Head", 60000, 4),
-    ("Supervisor", 100000, 1),
-    ("Operator", 15000, 2);
+    ("Director", 80000, 1),
+    ("Department Head", 60000, 2),
+    ("Supervisor", 100000, 3),
+    ("Operator", 15000, 4);
 
 INSERT INTO employee(first_name, last_name)
 VALUES

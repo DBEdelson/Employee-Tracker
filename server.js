@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
-const db = require("./db");
+const mysql = require("./db");
+const logo = require("asciiart-logo");
 require("console.table");
 
 const addDepartmentQuestions = [
@@ -311,6 +312,12 @@ const printMenu = () => {
 };
 
 const init = () => {
+  // Display logo text, load main prompts
+
+  const logoText = logo({ name: "Employee Manager" }).render();
+
+  console.log(logoText);
+
   printMenu();
 };
 
