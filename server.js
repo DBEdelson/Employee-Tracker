@@ -6,8 +6,8 @@ require('console.table');
 const addDepartmentQuestions = [
   {
     type: 'input',
-    name: 'departmentName',
-    message: 'What is the name of the department?\n',
+    name: 'name',
+    message: 'What is the name of the department?',
   },
 ];
 
@@ -57,9 +57,9 @@ const menuQuestions = [
 
 //ADD DEPARTMENT - COMPLETED
 const addDepartment = () => {
-  inquirer.prompt(addDepartmentQuestions).then(({ departmentName }) => {
-    db.createDepartment(departmentName).then((res) => {
-      console.log(`Added ${departmentName} to database`);
+  inquirer.prompt(addDepartmentQuestions).then(({ name }) => {
+    db.createDepartment(name).then(() => {
+      console.log(`Added ${name} to database`);
       printMenu();
     });
   });
@@ -67,7 +67,7 @@ const addDepartment = () => {
 
 //VIEW DEPARTMENTS - COMPLETED
 const viewDepartment = () => {
-  mysql.query('SELECT * from department;').then((res) => {
+  db.allDepartments().then((res) => {
     console.table(res[0]);
     printMenu();
   });
@@ -75,15 +75,10 @@ const viewDepartment = () => {
 
 //VIEW ROLES - COMPLETED
 const viewRoles = () => {
-  mysql
-    .query(
-      `SELECT role.id, role.title, department.name as department, role.salary 
-                FROM role JOIN department ON role.department_id = department.id;`,
-    )
-    .then((res) => {
-      console.table(res[0]);
-      printMenu();
-    });
+  db.allRoles().then((res) => {
+    console.table(res[0]);
+    printMenu();
+  });
 };
 
 //VIEW EMPLOYEES - COMPLETED
