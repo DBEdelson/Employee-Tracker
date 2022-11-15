@@ -24,5 +24,6 @@
     "dotenv": "^16.0.3",
     "inquirer": "^8.2.4",
     "mysql2": "^2.3.3"
-  }
+  },
+  "devDependencies": {}
 }
