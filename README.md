@@ -1,51 +1,63 @@
-Employee Tracker
-Description
+# Employee Tracker
+
+# Description
 Build a command line application to manage a company's employee database utilizing Node.js, Inquirer and MySQL. Ensure user is able to view all: employees, roles, departments, employee's by department and manager, department budget; be able to add/delete employee, role and department; update employee, employee role, and employee department.
 
-Table of Contents
-Usage
-Installation
-Credits
-License
-Badges
-Contribute
-Usage
-Live on Screencastify
+# Table of Contents
+* Usage
+* Installation
+* Credits
+* License
+* Badges
+* Contribute
+
+# Usage
+
 
 EmployeeTracker
 
-Installation
+# Installation
 To run via local environment:
 
-Clone the repository
+1. Clone the repository
 
-Open terminal, and navigate to the appropriate directory
+2. Open terminal, and navigate to the appropriate directory
 
-From command line:
+3. From command line:
 
-npm init
-npm install
+* npm init
+* npm install
+
 Install the following dependencies:
 
-mysql2 npm install --save mysql2
-inquirer npm install inquirer@8.2.4
-asciiart-logo npm i asciiart-logo
-console.table npm i console.table
+* mysql2 npm install --save mysql2
+* inquirer npm install inquirer@8.2.4
+* asciiart-logo npm i asciiart-logo
+* console.table npm i console.table
+
 Continue in command line:
 
-mysql -u root -p
-User will be prompted for password
+* mysql -u root -p
+* User will be prompted for password
+
 Once mysql is running
 
-source db/schema.sql;
-source db/seeds.sql;
-proceed to quit
+* source db/schema.sql;
+* source db/seeds.sql;
 
-quit;
-Finally type node server.js
+Proceed to quit
 
-Credits
-Collab/debug: Shawn Tschoepe Github: https://github.com/shawn220a 
+* quit;
+
+4. Finally type node server.js
+
+# Credits
+Collab/debug: 
+
+Shawn Tschoepe Github: https://github.com/shawn220a 
+
+Github: https://github.com/Salissa4 
+
 
 License
 MIT License
