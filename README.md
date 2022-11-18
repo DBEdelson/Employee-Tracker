@@ -13,6 +13,7 @@ Build a command line application to manage a company's employee database utilizi
 
 # Usage
 
+![Screenshot 2022-11-17 at 6 45 37 PM](https://user-images.githubusercontent.com/109247874/202590817-c7f85efc-430c-4359-a49f-cf38aa1adfb5.png)
 
 EmployeeTracker
 
